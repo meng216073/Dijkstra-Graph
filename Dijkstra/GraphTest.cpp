@@ -17,10 +17,19 @@ void foo(std::string& a)
 int main()
 {
 	Graph x("dijkstra.txt");
+	std::cout << "_INITAL GRAPH_ \n" << std::endl;
 	x.printGraph();
-	//std::vector<std::string> dik = x.dijkstraShortestPath("S", "E");
-	std::string a;
-	x.breathFirstTraversal("S", foo);
+
+	std::cout << "\n_DIJKSTRA SHORTEST PATH FROM S TO E_ \n" << std::endl;
+	std::vector<std::string> dik = x.dijkstraShortestPath("S", "E");
+	
+	for (std::string q : dik)
+	{
+		std::cout << q << " -> ";
+	}
+	std::cout << ::endl;
+	//std::string a;
+	//x.breathFirstTraversal("S", foo);
 	//Graph x;
 	//x.addEdge("Ankara", "France", 10);
 	//x.addEdge("France", "Italy", 6);
@@ -34,10 +43,5 @@ int main()
 	//x.removeEdge("Rome", "Ankara");
 	//x.printGraph();
 	//std::vector<std::string> dik = x.dijkstraShortestPath("Ankara", "Rome");
-	//for (std::string q : dik)
-	//{
-	//	std::cout << q << " -> ";
-	//}
-	//std::cout << ::endl;
 	return 0;
 }
