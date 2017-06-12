@@ -214,7 +214,8 @@ void Graph::enqueueConnected(int vertex, std::vector<bool>& visited,
 	/* Queue all nodes that are connected to the inital 
 	node and are not visited before */
 	while (curr)
-	{		if (!visited[nameMapping[curr->item]])
+	{		
+		if (!visited[nameMapping[curr->item]])
 		{
 			curr->weight += parentWeight;
 			queue->push(curr);
