@@ -1,5 +1,5 @@
-# Dijkstra-Graph
-C++ Dijkstra Shortest Path Algorithm &amp; Adjacency List Graph
+# Simple Dijkstra-Graph
+C++ Dijkstra Shortest Path Algorithm &amp; Adjacency List Graph for teaching purposes (not for performance).
 
 Included input file (dijsktra.txt) visual. (src: https://www.youtube.com/watch?v=GazC3A4OQTE&t=79s)
 ![](http://i.imgur.com/eFcbbdl.png)
